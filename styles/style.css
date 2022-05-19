@@ -1,0 +1,25 @@
+main {
+    background-color: #BA2E51;
+}
+
+.train-web-app {
+    height: 100vh;
+}
+
+.details-box,
+.ticket-box {
+    background-color: #fff;
+    color: #BA2E51;
+}
+
+h1,
+h2{
+    text-align: center;
+    color: #fff;
+}
+
+.btn-generate,
+.btn-delate {
+    background-color: #CCCCCC;
+    color: #BA2E51;
+}

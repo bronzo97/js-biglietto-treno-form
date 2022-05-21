@@ -3,10 +3,10 @@
 const generate = document.querySelector(".btn-generate");
 const delate = document.querySelector(".btn-delate");
 
-// username and distance declaration
+// username
 
 let userName = document.querySelector('#name');
-const distance = document.getElementById('');
+
 
 // ticket price and discount
 
@@ -20,13 +20,20 @@ let overAgeDiscount = ordinaryPrice - ordinaryPrice * 0.4;
 //  event listener
 
 generate.addEventListener("click", function () {
+
+// print username
+
     let typeUsername = document.querySelector(".username").value;
     userName.innerHTML += `${typeUsername}`;
+
+// taking age value
 
     let typeAge = document.querySelector("#age").value;
     let underAge = document.querySelector('[value="under-age"]').value;
     let between = document.querySelector('[value="between"]').value;
     let overAge = document.querySelector('[value="over-age"]').value;
+
+// taking distance value
 
     let typeDistance = document.querySelector('[class="distance"]').value;
 

@@ -39,17 +39,17 @@ generate.addEventListener("click", function () {
 
     let ticketCost = document.querySelector("#cost");
 
-
+// calculatin the price of the ticket basing on the distance and the age
 
     if (typeAge === underAge) {
-        console.log(`${typeDistance * underAgeDiscount} €`); 
-        ticketCost.innerHTML += `${typeDistance * underAgeDiscount} €`;
+        console.log(`${(typeDistance * underAgeDiscount).toFixed(2)} €`); 
+        ticketCost.innerHTML += `${(typeDistance * underAgeDiscount).toFixed(2)} €`;
     } else if (typeAge === between) {
-        console.log(`${typeDistance * ordinaryPrice} €`);
+        console.log(`${(typeDistance * ordinaryPrice).toFixed(2)} €`);
         let ticketCost = document.querySelector("#cost");
-        ticketCost.innerHTML += `${typeDistance * ordinaryPrice} €`;
+        ticketCost.innerHTML += `${(typeDistance * ordinaryPrice).toFixed(2)} €`;
     } else {
-        console.log(`${typeDistance * overAgeDiscount} €`);
-        ticketCost.innerHTML += `${typeDistance * overAgeDiscount} €`;
+        console.log(`${(typeDistance * overAgeDiscount).toFixed(2)} €`);
+        ticketCost.innerHTML += `${(typeDistance * overAgeDiscount).toFixed(2)} €`;
     }
 });
